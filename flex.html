@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex and positioning</title>
+    <style>
+        .container{
+            display: flex;
+            text-align: center;
+            gap: 10px;
+            /* this is remove for check ok*/
+            position: relative;
+            
+        }
+        .one{
+            height: 100px;
+            width: 120px;
+            background-color: red;
+            margin: 5px;
+        }
+        .two{
+            height: 100px;
+            width: 120px;
+            background-color: green;
+            margin: 5px;
+        }
+        .three{
+            height: 100px;
+            width: 120px;
+            background-color: purple;
+            margin: 5px;
+        }
+        .four{
+            height: 100px;
+            width: 120px;
+            background-color: purple;
+            margin: 5px;
+        }
+        #two{
+            position: absolute;
+            left: 40px;
+            top: 40px;
+        }
+        #four{
+            position: relative;
+            top: 40px;
+            left: 50px;
+        }
+        .other{
+            background-color: cyan;
+            height: 100px;
+            width: 120px;
+
+        }
+ 
+    </style>
+</head>
+<body> 
+    <div class="other">
+        other division
+    </div>
+    <div class="container">
+        <div class="one" >
+            First division
+        </div>
+        <div class="two" id="two"> 
+            second division
+        </div>
+        <div class="three"> 
+            Third division
+        </div>
+        <div class="four" id="four">
+            fourth division
+        </div>
+    </div>
+</body>
+</html>

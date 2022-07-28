@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: rgb(64, 72, 88);
+}
+.main{
+    background-color: rgb(236, 18, 218);
+    background-size: contain;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+}
+.logo{
+    color: cornsilk;
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+.master-nav{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-stretch: 20px;
+    margin-top: 18px;
+
+}
+.master-nav a {
+    color: white;
+    text-decoration:none;
+    margin-left: 30px;
+}
+p{
+    color:white;
+}

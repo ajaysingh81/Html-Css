@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+
+</head>
+<style>
+    #center{
+        text-align: center;
+    }
+</style>
+
+<body>
+
+
+    <fieldset>
+        <h1> Application for permission To Date My Survey</h1>
+        <p><strong>Note:</strong>Form is to be completed at least 21 days prior to date </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h3>personal Details</h3>
+        </legend>
+        <form action="">
+            <table border="0">
+                <tr>
+                    <td> <label for="name">Name:</label></td>
+                    <td><input type="text" name="NM" required placeholder="please enter your name "></td>
+                </tr>
+                <tr>
+                    <td><label for="add">Address:</label></td>
+                    <td><input type="text" name="add" placeholder="enter your address"></td>
+                </tr>
+                <tr>
+                    <td><label for="mob">Mobile Number:</label></td>
+                    <td> <input type="number" name="MO" required placeholder="enter mobile number"></td>
+
+                </tr>
+                <tr>
+                    <td> <label for="IQ">IQ:</label></td>
+                    <td><input type="number" name="IQ" required placeholder="Enter IQ lable"></td>
+                </tr>
+                <tr>
+                    <td> <label for="Gender">Gender:</label> <br></td>
+                    <td> <input type="radio" name="gender">male
+                        <input type="radio" name="gender">female
+                        <input type="radio" name="gender">other
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2" colspan="0"><label for="date">Date of proposed Outing:</label></td>
+                    <td><input type="date" name="Date"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    &nbsp;
+    &nbsp;
+    <fieldset>
+        <div>
+            <form action="">
+                <h3>Check All That Apply</h3>
+                <input type="checkbox">
+                <label for="check">I have tattoos and /or piercings</label> <br>
+                <input type="checkbox">
+                <label for="ckeck">I am more than 2 years older than my daughter</label>
+            </form>
+        </div>
+    </fieldset>
+    &nbsp;
+    <fieldset>
+        <div>
+            <h3>Political persuasion:</h3>
+            <select name="pp" id="pol">
+                <option value="l">left wing</option>
+                <option value="r"> right wing</option>
+                <option value="c">conservative</option>
+            </select>
+            <br>
+            <h3>Education lavel completed:</h3>
+            <select name="elc" id="ELC">
+                <option value="u"> Univercity</option>
+                <option value="c"> College</option>
+                <option value="s"> School </option>
+
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h3>Essay Section</h3>
+        </legend>
+        <p>In 50 words or more explain date me:</p>
+        <textarea name="text" id="" cols="70" rows="5">
+    </textarea>
+        <p>say someting moment ;</p>
+        <textarea name="mtext" id="" cols="70" rows="5"></textarea>
+
+    
+    </fieldset>
+    &nbsp;
+    <div><label for="file">Upload pic:</label>
+        <input type="file" name="pic">
+        <button>upload</button>
+    </div>
+    
+    <div id="center">
+        <p > <strong>THANKYOU</strong></p>
+        <p><strong>For form submit </strong> <button>click here</button></p>
+    </div>
+</body>
+
+</html>

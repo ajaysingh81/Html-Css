@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>pseudo</title>
+    <style>
+        /*  .only-child{
+            background-color:rgb(0,0,034);
+            color: red;
+        } */
+
+        p:only-child {
+            background-color: red;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="only-child">only child p</p>
+    </div>
+    <div>
+        <p>First chid p</p>
+        <p>Second child p </p>
+    </div>
+    <div>
+        <p>First child p</p>
+        <div>
+            <p class="only-child">only child p </p>
+        </div>
+        <p>Second child p </p>
+    </div>
+</body>
+
+</html>

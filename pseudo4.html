@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI states pseudo class</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: cursive;
+        }
+
+        form {
+            border: 3px solid black;
+        }
+
+        input:required {
+            border: 3px groove violet;
+        }
+
+        /* input:not(:required){
+            border: 3px dashed violet;
+        }*/
+        input:optional {
+            border: 2px dashed violet;
+        }
+
+        input:disabled {
+            border: 2px dashed red;
+            background: white;
+        }
+
+        /*input:read-only{
+            background-color: grey;
+        }*/
+        p {
+            display: none;
+        }
+
+        input:hover + p {
+            display: inline;
+            font-family: monospace;
+            background-color: red;
+        }
+
+        input:focus {
+            background-color: blue;
+            font-weight: bold;
+        }
+
+        img {
+            display: none;
+        }
+
+        input[type="email"]:focus:valid~img.valid {
+            display: inline;
+            width: 20px;
+            height: 20px;
+        }
+
+        input[type="email"]:focus:invalid~img.invalid {
+            display: inline;
+            width: 20px;
+            height: 20px;
+        }
+
+        input[type="radio"]:checked {
+            width: 20px;
+            height: 20px;
+
+        }
+
+        input[type="radio"]:checked+label {
+            color: red;
+        }
+
+        input[type="submit"] {
+            border: 2px solid violet;
+            background-color: blue;
+            color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Sign up Form</h2>
+    <form action="response.html">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td> <input type="text" name="nm" size="15" required>
+                    <p>Enter your name</p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="college">College:</label></td>
+                <td> <input type="text" name="clg" size="15" disabled></td>
+            </tr>
+            <tr>
+                <td><label for="primari">Primari email:</label></td>
+                <td> <input type="email" name="pmail" size="15" required>
+                    <p>Enter your mail</p>
+                    <img class="valid" src="web.jpg" alt="">
+                    <img src="web.jpg" alt="" class="invalid">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="secondary">secondary email:</label></td>
+                <td> <input type="email" name="smail" size="15">
+                    <p>Enter your optional email</option>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="pwd" size="15" required>
+                    <p>Enter your password</p>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="gender">Gender:</label></td>
+                <td><input type="radio" name="gender" value="m" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="f">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="gender" value="o">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" name="age" min="18" max="100" size="15">
+                    <p>Enter your age</p>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="mod">MOD:</label></td>
+                <td> <input type="text" name="mod" value="online" size="15" readonly>
+                    <p>only online deleviry availabal due to covid</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="submit">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+
+</html>

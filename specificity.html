@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Specificity</title>
+    <style type="text/css">
+        a[href]{
+            background-color: red;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        body ul li > a[href]{
+            background-color: tomato;
+            font-family: cursive;
+
+        }
+        h2+ul{
+            background-color: black;
+            color: white;
+        }
+        a{
+            background-color: red !important;
+        }
+
+        a{
+            background-color: green !important;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h2>Best websitee for front end development</h2>
+    <ul id="ul">
+        <li>
+            <a class="first" href="https://www.w3schools.com">W3Schoosl</a>
+
+        </li> <br>
+        <li>
+            <a href="https://www.codepen.io">Codepen</a>
+        </li>
+        <br>
+        <li>
+            <a href="https://www.cssbattle.dev">Cssbattle</a>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>
